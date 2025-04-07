@@ -1,6 +1,3 @@
-import Image from 'next/image';
-import Button from './Button';
-
 export default function Footer() {
   const currentYear = new Date().getFullYear();
   const appName = 'pixibli';

@@ -1,29 +1,29 @@
-import Image from 'next/image';
+// import Image from 'next/image';
 import Button from './Button';
 
 export default function Header() {
   const isLoggedIn = true;
 
   return (
-    <nav className='container mx-auto p-8 flex items-center'>
+    <nav className='container mx-auto p-8 flex items-center '>
       <div className='flex-1'>
         <ul className='flex text-transform-uppercase gap-4 text-underline font-bold'>
           {isLoggedIn ? (
             <>
               <li>
-                <a href='#'>Transform</a>
+                <a href='/upload'>Transform</a>
               </li>
               <li>
-                <a href='#'>Gallery</a>
+                <a href='/gallery'>Gallery</a>
               </li>
               <li>
-                <a href='#'>How it Works</a>
+                <a href='/how'>How it Works</a>
               </li>
             </>
           ) : (
             <>
               <li>
-                <a href='#'>Transform</a>
+                <a href='/upload'>Transform</a>
               </li>
             </>
           )}

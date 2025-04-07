@@ -6,7 +6,7 @@
   /* Deep Brown */
   --foreground: #5C4033;
   /* : Light Beige */
-  --borders: #E0D8C0;
+  --border: #E0D8C0;
   /* Warm Terracotta/Ochre */
   --primary: #CD853F;
   /* Muted Twilight Blue  */
@@ -18,14 +18,28 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-border: var(--border);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
   --font-sans: var(--font-nunito-sans);
   --font-quicksand: var(--font-quicksand);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    /* warm grey-brown */
+    --background: #3A3232;
+    /* Warm Off-White */
+    --foreground: #EAE0D1;
+    /* Slightly lighter warm grey-brown */
+    --border: #4A4242;
+    /* Tan */
+    --primary: #D2B48C;
+    /* Muted Twilight Blue  */
+    --secondary: #778899 ;
+    /* Warm Terracotta/Ochre */
+    --accent: #FFEC8B;
   }
 }
 
@@ -34,3 +48,23 @@ body {
   color: var(--foreground);
   font-family: var(--font-nunito-sans), Arial, Helvetica, sans-serif;
 }
+
+/** UPPY COLOR RESET **/
+
+.uppy-Dashboard-inner {
+  background-color: var(--color-border) !important;
+  border-color: var(--color-foreground) !important;
+}
+
+.uppy-Dashboard-AddFiles-title, .uppy-DashboardContent-title, .uppy-Dashboard-Item-name, .uppy-Informer-animated p{
+  color: var(--color-foreground) !important;
+}
+
+.uppy-u-reset.uppy-c-btn.uppy-Dashboard-browse, .uppy-DashboardContent-back {
+  color: var(--color-accent) !important;
+}
+.uppy-u-reset.uppy-c-btn.uppy-Dashboard-browse:hover {
+  border-color: var(--color-accent);
+}
+
+/** UPPY COLOR RESET END **/
