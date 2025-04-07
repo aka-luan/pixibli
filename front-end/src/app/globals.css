@@ -54,6 +54,7 @@ body {
 .uppy-Dashboard-inner {
   background-color: var(--color-border) !important;
   border-color: var(--color-foreground) !important;
+  border-radius: 16px !important;
 }
 
 .uppy-Dashboard-AddFiles-title, .uppy-DashboardContent-title, .uppy-Dashboard-Item-name, .uppy-Informer-animated p{
@@ -67,4 +68,8 @@ body {
   border-color: var(--color-accent);
 }
 
+.uppy-Dashboard-AddFiles {
+  border-radius: 8px !important;
+  border-color: var(--color-secondary) !important;
+}
 /** UPPY COLOR RESET END **/
